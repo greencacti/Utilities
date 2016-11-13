@@ -19,7 +19,6 @@ do
     esac
 done
 
-echo $OPTIND
 shift $[$OPTIND-1]
 
 sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no -l $USER $1 $2
